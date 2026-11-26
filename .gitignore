@@ -22,5 +22,5 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
-/bin
+/_bin
 /.venv
