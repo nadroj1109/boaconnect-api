@@ -1,0 +1,19 @@
+- dapat alisin yung timer sa pag fillup sa system, natataranta Ang residents (Dito po ay may iba pa po bang pwede gawin na for security? yon po Kasi Ang inadaing ng mga resident na pinagpa UAT namin)
+
+- dapat mapipindot na yung mga nasa taas ng dashboard like for example is sa household pagpinindot Yung arrow may maga appear Yung list of household ng lahat ng residents, Ganon den sa number of residents ga appear Yung list of names ng residents, tsaka sa graphs ng by Sector Yung sa each category ay kapag pinindot Yung graph malabas Yung list ng mga resident na kabilang sa category na yon, same den sa graph ng educational attainment ( ito po ay sa interface lang ng kapitan at secretary) sa admin po ay stay na lang po as graphs. Tsaka po pala Sir di Siya naga appear sa dashboard, naglagay po Ako ng resident na employed, solo parent at pwd ay di po naga appear yon sa dashboard, saka po pasama n den po Yung out of school youth don sa dashboard ng sector ( sa part ng pwd, solo parent at senior citizen dapat Ang malabas na list ay Yung registered at Hindi 
+
+- naka required yung sa sitio pero wala naman nakalagay na * ( ito po ay sa resident registration)
+
+- Yung sa child monitoring and pregnant monitoring at sa payment ay dashboard na lang ipakita sa interface ng kapitan, baguhin den Ang dashboard ng treasurer, BHW/BNS.
+
+- Hindi maselect Ang 1958 pababa na year sa birthdate
+
+- iimprove Ang design ng system 
+
+Tsaka po Yung sa iba pong feature ng system na napadagdag ng panel, gaya po nung sa makikita Yung name ng household head sa household table, Yung view feature po sa household na makikita Yung information ng household. Print feature sa household and residents info ( individually and overall). Pati po Sir Yung sa announcement and sending report feature, tsaka po Yung sa profiling every 6 months. 
+
+Pagawa na daw po niyan Sir hangang martes, gapa UAT na po kasi kami sa LGU.
+
+Tsaka po pala sa Sir, Yung sa SMS, Nag search po Kasi kami ng API na nagabigay ng libreng credits ayyyy Yung sa Phil SMS po ay nagabigay daw po ng 5 free credits or pwede daw Naman po gumawa ng mock OTP, Yung po Kasi yung gusto den ng resident na magkano function den Yung SMS, Kasi karamihan po sa kanila ay  walang email, kahit Yung naunang feature na sinend ko sa inyo muna gawin niyo, Saka na po pagkatapos Yung sa SMS
+
+Tsaka po pala Sir Yung sa mga maga walk in na makuha ng document, (para po sa mga ayaw gumamit ng app) feature po na a encode na lang ni Sec Yung information ni Resident na naga request then after po non is maga generate ng document Yung system para maprint at mapirmahan ni kap

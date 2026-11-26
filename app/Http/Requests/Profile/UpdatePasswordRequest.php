@@ -1,0 +1,54 @@
+<?php
+
+namespace App\Http\Requests\Profile;
+
+use Illuminate\Contracts\Validation\ValidationRule;
+use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Validation\ValidationException;
+
+class UpdatePasswordRequest extends FormRequest
+{
+    /**
+     * Determine if the user is authorized to make this request.
+     */
+    public function authorize(): bool
+    {
+        return $this->user() !== null;
+    }
+
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array<string, ValidationRule|array<mixed>|string>
+     */
+    public function rules(): array
+    {
+        return [
+            'current_password' => [
+                'required',
+                'string',
+            ],
+
+            'password' => [
+                'required',
+                'string',
+                'min:8',
+                'confirmed',
+            ],
+        ];
+    }
+
+    protected function passedValidation(): void
+    {
+        if (! Hash::check(
+            $this->current_password,
+            $this->user()->password
+        )) {
+            throw ValidationException::withMessages([
+                'current_password' =>
+                    'The current password is incorrect.',
+            ]);
+        }
+    }
+}
